@@ -1,0 +1,71 @@
+.advice {
+  position: relative;
+  width: 540px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background: #313a48;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+  box-shadow: 30px 50px 80px 0 rgba(0, 0, 0, 0.1);
+
+  &__id {
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.31em;
+    text-align: center;
+    color: #53ffaa;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #cee3e9;
+    margin: 24px 0 0;
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background: #4f5d74;
+    margin: 40px 0 24px;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 16px;
+      background: #313a48 url('../../assets/icon-separator.svg') no-repeat
+        center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__btn {
+    background: #53ffaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: -32px;
+    border: none;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 40px 0 #53ffaa;
+    }
+  }
+}
